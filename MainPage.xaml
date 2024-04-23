@@ -1,0 +1,52 @@
+﻿
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UzAutoProduction.MainPage">
+
+    <StackLayout 
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Padding="20">
+
+        <Button 
+            x:Name="ScannButton"
+            Text="Start Scanning" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            WidthRequest="200" 
+            HeightRequest="50"
+            BackgroundColor="Blue"
+            TextColor="White"
+            CornerRadius="10"
+            FontSize="Large"
+            Clicked="GoToScann" />
+
+        <Button 
+            x:Name="Location"
+            Text="Take Location" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            WidthRequest="200" 
+            HeightRequest="50"
+            BackgroundColor="Blue"
+            TextColor="White"
+            CornerRadius="10"
+            FontSize="Large"
+            Clicked="OnClickTakeLocation" />
+        
+        <Button 
+            x:Name="googlemup"
+            Text="GoToMup" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center" 
+            WidthRequest="200" 
+            HeightRequest="50"
+            BackgroundColor="Blue"
+            TextColor="White"
+            CornerRadius="10"
+            FontSize="Large"
+            Clicked="OnClickGoogleMup" />
+
+    </StackLayout>
+
+</ContentPage>
